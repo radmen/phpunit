@@ -117,10 +117,10 @@ class PHPUnit_Util_Log_JUnit extends PHPUnit_Util_Printer implements PHPUnit_Fra
      * An error occurred.
      *
      * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
+     * @param Exception|Throwable    $e
      * @param float                  $time
      */
-    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addError(PHPUnit_Framework_Test $test, $e, $time)
     {
         $this->doAddFault($test, $e, $time, 'error');
         $this->testSuiteErrors[$this->testSuiteLevel]++;

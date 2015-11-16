@@ -53,10 +53,10 @@ class PHPUnit_Util_Log_TeamCity extends PHPUnit_TextUI_ResultPrinter
      * An error occurred.
      *
      * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
+     * @param Exception|Throwable    $e
      * @param float                  $time
      */
-    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addError(PHPUnit_Framework_Test $test, $e, $time)
     {
         $this->printEvent(
             'testFailed',

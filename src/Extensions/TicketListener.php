@@ -29,10 +29,10 @@ abstract class PHPUnit_Extensions_TicketListener implements PHPUnit_Framework_Te
      * An error occurred.
      *
      * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
+     * @param Exception|Throwable    $e
      * @param float                  $time
      */
-    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addError(PHPUnit_Framework_Test $test, $e, $time)
     {
     }
 

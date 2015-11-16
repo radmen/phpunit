@@ -19,10 +19,10 @@ interface PHPUnit_Framework_TestListener
      * An error occurred.
      *
      * @param PHPUnit_Framework_Test $test
-     * @param Exception              $e
+     * @param Exception|Throwable    $e
      * @param float                  $time
      */
-    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time);
+    public function addError(PHPUnit_Framework_Test $test, $e, $time);
 
     /**
      * A failure occurred.

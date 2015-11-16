@@ -23,7 +23,7 @@ class Framework_TestListenerTest extends PHPUnit_Framework_TestCase implements P
     protected $result;
     protected $startCount;
 
-    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addError(PHPUnit_Framework_Test $test, $e, $time)
     {
         $this->errorCount++;
     }
